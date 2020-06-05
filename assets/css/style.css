@@ -1,18 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
-    width: 100vw;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-section{
-    height: 100vh;
-    width: 100vw;
+body {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #0e131a 100%);
 }
-.scoour{
-    display: flex;
-    justify-content: space-evenly;
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (50px)[15];
+      grid-template-rows: repeat(15, 50px);
 }
+
+.container h1 {
+  margin-left: 2em;
+  margin-bottom: 3em;
+}
+
+.container .userAuswahl {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2/6;
+  border: 1px solid wheat;
+  padding-top: 1em;
+}
+
+.container input {
+  margin-bottom: 3em;
+  margin-left: 4em;
+}
+
+.container .scoor {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7/9;
+  border: 1px solid gold;
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .este_div {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 8;
+  grid-row: 8;
+}
+
+.container .este_div h1 {
+  position: relative;
+  bottom: 0.8em;
+  left: .5em;
+  background-color: red;
+  width: 2em;
+}
+
+.container .comp_div {
+  -ms-grid-column: 8;
+  grid-column: 8;
+  -ms-grid-row: 8;
+  grid-row: 8;
+}
+
+.container .comp_div h1 {
+  position: relative;
+  bottom: 0.8em;
+  left: 1em;
+  background-color: red;
+  width: 2.7em;
+}
+
+.container button {
+  font-size: 4em;
+  float: right;
+  margin-left: 1em;
+}
+
+.container #buttons {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4/10;
+  -ms-grid-row: 10;
+  grid-row: 10;
+  margin-right: 4.9em;
+}
+
+.container .refresh {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 2;
+  grid-row: 14/16;
+  border: 1px solid wheat;
+  border-radius: 2em;
+  text-align: center;
+  margin-right: 1.5em;
+}
+
+.container .refresh:hover {
+  background-color: wheat;
+  color: black;
+}
+
+.container #ergebnisse {
+  -ms-grid-column: 7;
+  grid-column: 7;
+  -ms-grid-row: 12;
+  grid-row: 12;
+  font-size: 2em;
+}
+/*# sourceMappingURL=style.css.map */

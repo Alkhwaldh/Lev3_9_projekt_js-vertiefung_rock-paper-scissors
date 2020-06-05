@@ -8,35 +8,39 @@
 </head>
 <body>
 
-    <section>
-        <div class="scoour">
-            <div class="playerScour">
-                <h1>Player</h1>
-                <p id="playerScore">0</p>
-            </div>
-            <div class="playerScour">
-                <h1>Computer</h1>
-                <p id="computerScore">0</p>
-            </div>
+    <section class="container">
+        <div class="userAuswahl">
+            <h1>How many rounds</h1>
+            <form action="">
+                <input  type="radio" selected name="versuche" value="3"><label for=""> 3</label>
+                <input type="radio" name="versuche" value="6"><label for="" >6</label><br>
+                <input type="radio" name="versuche" value="9"><label for="" > 9</label>
+                <input type="radio" name="versuche" value="12"><label for="" >12</label>
+            </form>
         </div>
-    <div>
-        <form action="">
-            <input  type="radio" selected name="versuche" value="3"> <label for="">3</label>
-            <input type="radio" name="versuche" value="6"><label for="" >6</label>
-            <input type="radio" name="versuche" value="9"><label for="" >9</label>
-            <input type="radio" name="versuche" value="12"><label for="" >12</label>
-        </form>
-    </div>
+        <div class="este_div">
+            <h1>User</h1> 
+         </div>
+         <div class="comp_div">
+            <h1>Comp</h1>
+        </div>
+       <div class="scoor">
+
+            <p id="playerScore">0  </p>
+            <p>:</p> 
+            <p id="computerScore">0</p>
+        </div>
+        
 <div id="buttons">
     <button onclick="play(1)">✊</button>
     <button onclick="play(2)">✋</button>
     <button onclick="play(3)">✌️</button>
 </div>
-    <div id="ergebnisse"></div>
-   <script src="assets/js/main.js"></script>
-</section> 
+<div id="ergebnisse"></div>
 
-    <div id="ergebnisse"></div>
+<h1 class="refresh" onclick="refresh()">Refresh the Page</h1>
+ 
+</section> 
     <script src="assets/js/main.js"></script>
 </body>
 </html>

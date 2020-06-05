@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(14, 19, 26) 100%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, 50px);
+    
+        h1{
+            margin-left: 2em;
+            margin-bottom: 3em;
+        }
+    .userAuswahl{
+     grid-column: 5/9;
+     grid-row: 2/6;
+     border: 1px solid wheat;
+     padding-top: 1em;
+    }
+    input{
+        margin-bottom: 3em;
+        margin-left: 4em;
+    }
+    .scoor{
+        grid-column: 5/9;
+        grid-row: 7/9;
+       
+        border: 1px solid gold;
+        padding-top: 2em;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .este_div{
+        grid-column: 4;
+        grid-row: 8;
+       h1{
+           position: relative;
+           bottom: 0.8em;
+           left: .5em;
+           background-color: red;
+           width: 2em;
+       }
+    }
+    .comp_div{
+        grid-column: 8;
+        grid-row: 8;
+        h1{
+            position: relative;
+            bottom: 0.8em;
+            left: 1em;
+            background-color: red;
+            width: 2.7em;
+        }
+    }
+
+    button{
+        font-size: 4em;
+        float: right;
+        margin-left: 1em;
+     
+    }
+    #buttons{
+        grid-column: 4/10;
+        grid-row: 10;
+        margin-right: 4.9em;
+
+    }
+    .refresh{
+        grid-column: 5/9;
+        grid-row: 14/16;
+        border: 1px solid wheat;
+        border-radius: 2em;
+        text-align: center;
+        margin-right: 1.5em;
+        &:hover{
+            background-color: wheat;
+            color: black;
+        }
+        
+    }
+    #ergebnisse{
+        grid-column: 7;
+        grid-row: 12;
+        font-size: 2em;
+    }
+}
